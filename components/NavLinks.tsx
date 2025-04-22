@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { FaGreaterThan } from "react-icons/fa6";
 
 const navItems = [
   { id: 1, text: "MECURY", url: "mercury", color: "#DEF4FC" },

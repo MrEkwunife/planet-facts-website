@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 const PlanetImage = ({ src }: { src: string | undefined }) => {
   return (
     <div className="flex-1/2">

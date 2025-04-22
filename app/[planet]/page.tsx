@@ -1,11 +1,8 @@
 "use client";
 
 import Main from "./Main";
-import { ButtonProvider, useButtonContext } from "@/components/ButtonContext";
+import { ButtonProvider } from "@/components/ButtonContext";
 import ButtonGroup from "@/components/ButtonGroup";
-import PlanetDataSummary from "@/components/PlanetDataSummary";
-
-import { useContext } from "react";
 
 export default function Page() {
   return (

@@ -1,7 +1,7 @@
 import PlanetDataSummary from "@/components/PlanetDataSummary";
 import PlanetImage from "@/components/PlanetImage";
 import PlanetText from "@/components/PlanetTexts";
-import { useButtonContext, ButtonProvider } from "@/components/ButtonContext";
+import { useButtonContext } from "@/components/ButtonContext";
 
 import data from "@/data.json";
 import { useParams } from "next/navigation";
