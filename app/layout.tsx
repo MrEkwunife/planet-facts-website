@@ -1,14 +1,15 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { League_Spartan, Antonio } from "next/font/google";
 import "./globals.css";
+import Header from "@/components/Header";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const leagueSpartan = League_Spartan({
+  variable: "--font-league-spartan",
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const antonio = Antonio({
+  variable: "--font-antonio",
   subsets: ["latin"],
 });
 
@@ -23,11 +24,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${leagueSpartan.variable} ${antonio.variable}`}>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${leagueSpartan.variable} ${antonio.variable} antialiased`}
       >
-        {children}
+        <div className="">
+          <Header />
+          <hr className="w-full" />
+          <main className="">{children}</main>
+        </div>
       </body>
     </html>
   );
